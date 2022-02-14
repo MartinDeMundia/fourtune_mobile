@@ -1,0 +1,2 @@
+com/swarmconnect/BuildConfig.java
+ com.swarmconnect.BuildConfig

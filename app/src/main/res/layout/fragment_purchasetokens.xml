@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_banner_2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.00dp"
+                        android:orientation="vertical">
+
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+
+                            android:text="Subscription Purchase history" android:textSize="20dp"/>
+
+                        -->
+
+
+                        <TextView
+                            android:id="@+id/txtGamerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Hi, Gamer!"
+                            android:textColor="@android:color/white"
+                            android:textColorLink="@android:color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <View
+                            android:layout_width="100.00dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#797979"></View>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/relative_CardLook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/lbl_account_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Your account is as below, date 04 - Feb - 2021"
+                            android:textColor="@android:color/background_dark"
+                            android:textColorLink="@android:color/white"
+                            android:textSize="15dp"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/coins"
+                            android:weightSum="10"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Main Account"
+                                    android:textColor="@color/black"
+                                    android:textColorLink="@android:color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/cabinsketchregular"
+                                    />
+                            <LinearLayout
+                                android:layout_weight="5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                >
+                                <ImageView
+                                    android:id="@+id/lbl_account"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="false"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/wallet_img"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:id="@+id/txtUserTokenAmount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="0.00"
+                                    android:textColor="@color/black"
+                                    android:textColorLink="@android:color/black"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/cabinsketchregular"
+                                    />
+                                <ImageView
+                                    android:id="@+id/settings_main_account"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="false"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/settings"
+                                    android:scaleType="centerInside" />
+
+                            </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/cabinsketchregular"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Earnings Account (click gear icon to view sub wallets)"
+                                    android:textColor="@color/black"
+                                    android:textColorLink="@android:color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                <LinearLayout
+                                    android:layout_weight="5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:weightSum="10"
+                                    >
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerVertical="false"
+                                        android:layout_weight="0.4"
+                                        android:background="@drawable/wallet_img"
+                                        android:scaleType="centerInside" />
+
+                                    <TextView
+                                        android:id="@+id/txtEarnings"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="9"
+                                        android:gravity="center|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="0.00"
+                                        android:textColor="@color/black"
+                                        android:textColorLink="@android:color/black"
+                                        android:textSize="35dp"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        android:fontFamily="@font/cabinsketchregular"
+                                        />
+
+
+                                    <ImageView
+                                        android:id="@+id/settings_earnings_account"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerVertical="false"
+                                        android:layout_weight="0.4"
+                                        android:background="@drawable/settings"
+                                        android:scaleType="centerInside" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Received Tokens Account"
+                                    android:textColor="@color/black"
+                                    android:textColorLink="@android:color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/cabinsketchregular"
+                                    />
+                                <LinearLayout
+                                    android:layout_weight="5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:weightSum="10"
+                                    >
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerVertical="false"
+                                        android:layout_weight="0.4"
+                                        android:background="@drawable/wallet_img"
+                                        android:scaleType="centerInside" />
+
+                                    <TextView
+                                        android:id="@+id/txtReceivedTokens"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="9"
+                                        android:gravity="center|left"
+                                        android:paddingLeft="10dp"
+                                        android:text="0.00"
+                                        android:textColor="@color/black"
+                                        android:textColorLink="@android:color/black"
+                                        android:textSize="35dp"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        android:fontFamily="@font/cabinsketchregular"
+                                        />
+
+                                    <ImageView
+                                        android:id="@+id/settings_received_account"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerVertical="false"
+                                        android:layout_weight="0.4"
+                                        android:background="@drawable/settings"
+                                        android:scaleType="centerInside" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                           <!-- <TextView
+                                android:id="@+id/txtUserTokenAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="10"
+                                android:fontFamily="@font/cabinsketchregular"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:text="$0"
+                                android:textColor="@android:color/background_dark"
+                                android:textColorLink="@android:color/white"
+                                android:textSize="45dp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+                            <!--  <Button
+                                android:id="@+id/btnUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:background="@drawable/android_icon"
+                                android:clickable="true"
+                                android:fontFamily="@font/cabinsketchregular"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:paddingBottom="10dp"
+                                android:text="$ 2,300"
+                                android:textAllCaps="false"
+                                android:textColor="#f16f7d"
+                                android:textSize="48sp"
+                                android:textStyle="normal" />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/relative_CardLook"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:text="Account history"
+                                android:textColor="@android:color/background_dark"
+                                android:textColorLink="@android:color/white"
+                                android:textSize="15dp"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp">
+
+                            <HorizontalScrollView
+                                android:layout_width="fill_parent"
+                                android:layout_height="400sp"
+                                android:fillViewport="true">
+
+                                <com.anychart.AnyChartView
+                                    android:id="@+id/any_chart_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </HorizontalScrollView>
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

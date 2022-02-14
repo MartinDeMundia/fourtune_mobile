@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/home_banner_2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.podcopic.animationlib.androidsimplifiedanimation.Views.AttentionView">
+
+
+    <LinearLayout
+        android:id="@+id/titleimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/fourtune_new_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleimage">
+
+
+        <EditText
+            android:isScrollContainer="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_weight="10"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLines="50"
+            android:minLines="6"
+            android:paddingLeft="10dp"
+            android:scrollbars="vertical"
+            android:text="
+Fourtune Mobile \n App is meant to be a (gallery of games) App which
+is supported by a cryptocurrency ‘Fourtune’ that brings about a
+gaming reward system.\n\n
+
+The Tokens purchased shall enable a reward system that will come about as
+a percentage of the tokens in the account. \n\n
+
+
+FOURTUNE is a Mobile Game Distribution Platform based on block-chain technology \n
+with the intention of bringing fresh air to the gaining industry around the world.\n\n
+
+ Fourcus Group Ltd and Dragonfly join forces to bring games to everyone including people\n
+ that are unbanked (over 2 billion according to Findex1) but have access to cash and 4G/3G/LTE smartphones.\n
+ Their aim is to provide an income generating platform for content creators and gamers alike.\n\n
+
+Customers will be able to access the FOURTUNE Store using an application\n
+built using DECSNT's library that will provide block-chain functionality.\n\n
+
+While content providers will have access to the FOURTUNE Android SOK allowing them to\n
+ include a range of features such as in-app purchases, rewards and more.\n
+ Hence, consistency is secured across all the applications utilizing FOURTUNE.\n
+
+During the FOURTUNE game-play, the reward system will auto-generate FOURTUNE tokens.\n
+These tokens can be then exchanged for Fiat currency, or can be used in the EVENTS section \n
+which acts as the FOURTUNE store. They will be offered to end users via \n
+internal exchange or using an existing reseller network of brick and mortar stores and mobile operators.\n\n
+
+FOURTUNE's four architectural layers manage all of these tasks.\n
+The transaction layer is responsible for managing all block-chain transactions between clients,\n
+publishers and Fourtune CPU. The data layer stores all the content securely and reliably,\n
+while the EVENTS section itself provides the basic business logic on top of the data and \n
+transaction layers managing entities available in FOURTUNE. \n
+The final layer, the application layer, is an interface for gamers and event enthusiast.
+
+
+"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textSize="12dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="10"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Developed by Core ICT COnsultancy : wwww.coreict.co.ke"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+    </LinearLayout>
+</ScrollView>

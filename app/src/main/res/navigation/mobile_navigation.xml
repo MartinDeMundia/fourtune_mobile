@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.coreictconsultancy.fourtune.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_coinsearned"
+        android:name="com.coreictconsultancy.fourtune.ui.CoinsEarned"
+        android:label="Coins Earned"
+        tools:layout="@layout/fragment_coinsearned" />
+
+    <fragment
+        android:id="@+id/nav_purchasetokens"
+        android:name="com.coreictconsultancy.fourtune.ui.PurchaseTokens"
+        android:label="Purchase Tokens"
+        tools:layout="@layout/fragment_purchasetokens" />
+
+    <fragment
+        android:id="@+id/nav_transfertokens"
+        android:name="com.coreictconsultancy.fourtune.ui.TransferTokens"
+        android:label="Transfer Tokens"
+        tools:layout="@layout/fragment_transfertokens" />
+
+
+    <fragment
+        android:id="@+id/nav_openmarket"
+        android:name="com.coreictconsultancy.fourtune.ui.OpenMarket"
+        android:label="Open Market"
+        tools:layout="@layout/fragment_openmarket" />
+
+    <fragment
+        android:id="@+id/nav_fourtune_events"
+        android:name="com.coreictconsultancy.fourtune.ui.FourtuneEvents"
+        android:label="Events"
+        tools:layout="@layout/fragment_fourtune_events" />
+
+    <fragment
+        android:id="@+id/nav_fourtune_events_details"
+        android:name="com.coreictconsultancy.fourtune.ui.EventDetails"
+        android:label="Event Details"
+        tools:layout="@layout/fragment_event_details" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.coreictconsultancy.fourtune.ui.About"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_myaccount"
+        android:name="com.coreictconsultancy.fourtune.ui.MyAccount"
+        android:label="My Account"
+        tools:layout="@layout/fragment_myaccount" />
+
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.coreictconsultancy.fourtune.ui.Exit"
+        android:label="GoodBye!!"
+        tools:layout="@layout/fragment_exit" />
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.coreictconsultancy.fourtune.ui.MyProfile"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_myprofile" />
+
+
+</navigation>

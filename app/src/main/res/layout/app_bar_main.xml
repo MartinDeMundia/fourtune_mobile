@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Fourtune.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar"
+            app:popupTheme="@style/Theme.Fourtune.PopupOverlay" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/menu_bar_home"
+            android:gravity="center"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20sp"
+                    android:layout_marginRight="20sp">
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/coinsearned"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/coins"
+                        app:cb_color="#99CC00"
+                        app:cb_pressedRingWidth="8dip" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Coins Earned"
+                        android:textColor="#FFFF"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20sp">
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/purchasetokens"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/one_coin"
+                        app:cb_color="#99CC00"
+                        app:cb_pressedRingWidth="8dip" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="right"
+                        android:text="Purchase tokens"
+                        android:textColor="#FFFF"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20sp">
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/transfertokens"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/currency_exchange"
+                        app:cb_color="@android:color/transparent"
+                        app:cb_pressedRingWidth="8dip" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="right"
+                        android:text="Transfer tokens"
+                        android:textColor="#FFFF"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/openmarket"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:src="@drawable/market"
+                        app:cb_color="#99CC00"
+                        app:cb_pressedRingWidth="8dip" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="right"
+                        android:text="Open Market"
+                        android:textColor="#FFFF"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/square_error"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/ic_action_monetization_on" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

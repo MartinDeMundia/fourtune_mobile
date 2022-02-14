@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home_work"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_coinsearned"
+            android:icon="@drawable/ic_action_monetization_on"
+            android:title="Coins Earned" />
+        <item
+            android:id="@+id/nav_purchasetokens"
+            android:icon="@drawable/ic_action_attach_money"
+            android:title="Purchase Tokens" />
+
+        <item
+            android:id="@+id/nav_transfertokens"
+            android:icon="@drawable/ic_action_transfer_within_a_station"
+            android:title="Transfer Tokens" />
+
+        <item
+            android:id="@+id/nav_openmarket"
+            android:icon="@drawable/ic_action_graphic_eq"
+            android:title="Open Market" />
+
+        <item
+            android:id="@+id/nav_fourtune_events"
+            android:icon="@drawable/calendar"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_action_app_settings_alt"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_myaccount"
+            android:icon="@drawable/ic_action_person_pin"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_action_exit_to_app"
+            android:title="Exit" />
+
+    </group>
+</menu>

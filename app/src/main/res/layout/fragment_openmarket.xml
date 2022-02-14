@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_banner_2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.00dp"
+                        android:orientation="vertical">
+
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+
+                            android:text="Subscription Purchase history" android:textSize="20dp"/>
+
+                        -->
+
+
+                        <TextView
+                            android:id="@+id/txtGamerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Hi, Gamer!"
+                            android:textColor="@android:color/white"
+                            android:textColorLink="@android:color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <View
+                            android:layout_width="100.00dp"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#797979"></View>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/relative_CardLook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/lbl_account_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Open market section"
+                            android:textColor="@android:color/background_dark"
+                            android:textColorLink="@android:color/white"
+                            android:textSize="15dp"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/swarm_offline_error_background"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:weightSum="10"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <TextView
+                                android:id="@+id/txtTokenValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_weight="10"
+                                android:fontFamily="@font/cabinsketchregular"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:textColor="@android:color/background_dark"
+                                android:textColorLink="@android:color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/relative_CardLook"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Graph showing Fourtune trend (highest/low value attained over the period in days) "
+                            android:textColor="@android:color/background_dark"
+                            android:textColorLink="@android:color/white"
+                            android:textSize="12dp"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp">
+
+                            <HorizontalScrollView
+                                android:layout_width="fill_parent"
+                                android:layout_height="400sp"
+                                android:fillViewport="true">
+
+                                <com.anychart.AnyChartView
+                                    android:id="@+id/any_chart_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </HorizontalScrollView>
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.coreictconsultancy.fourtune"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true // here
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'lib/armeabi-v7a/libijkffmpeg.so'
+        exclude 'lib/armeabi-v7a/libijkplayer.so'
+        exclude 'lib/armeabi-v7a/libijksdl.so'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    flavorDimensions "deps"
+    productFlavors {
+        playStore {
+            dimension "deps"
+        }
+        foss {
+            dimension "deps"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation project(':animationlib')
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation project(':swarmConnect')
+    implementation files('libs/andengine-gles2.jar')
+    implementation files('libs/appbrain-sdk-android.jar')
+    implementation files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
+    implementation files('libs/libGoogleAnalyticsServices.jar')
+
+
+
+   //implementation files('libs/httpclient-4.3.3.jar')
+   // implementation files('libs/httpcore-4.3.2.jar')
+   // implementation files('libs/httpmime-4.5.2.jar')
+   // implementation files('libs/httpclient-cache-4.5.2.jar')
+   // implementation files('libs/httpclient-win-4.5.2.jar')
+    //implementation files('libs/httpcore-4.4.4.jar')
+    //implementation files('libs/httpmime-4.5.2.jar')
+    implementation files('libs/java-json.jar')
+    implementation files('libs/easyandroidanimationslibrary-v0.5.jar')
+    //noinspection DuplicatePlatformClasses
+    implementation 'commons-logging:commons-logging:1.1.1'
+    implementation 'com.github.markushi:circlebutton:1.1'
+    implementation 'org.apache.commons:commons-lang3:3.10'
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+    //implementation 'com.braintreepayments.api:braintree:1.7.10'
+    //implementation 'com.braintreepayments.api:drop-in:4.6.0'
+
+    ///implementation 'com.braintreepayments.api:braintree:2.22.0'
+   //implementation 'com.braintreepayments.api:drop-in:3.7.1'
+
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    //implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+    //implementation 'com.paypal.sdk:paypal-android-sdk:2.15.2'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.androidstudy:daraja:1.0.2'
+
+   // implementation('com.paypal.checkout:android-sdk:0.1.0')
+
+
+
+
+    //implementation 'com.google.android.gms:play-services:+'
+
+
+
+
+}

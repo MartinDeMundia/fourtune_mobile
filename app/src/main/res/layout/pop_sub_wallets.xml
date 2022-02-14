@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/containerheader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu_bar_home"
+        android:textColor="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtPopuplabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/specialeliteregular"
+            android:gravity="left"
+            android:padding="8sp"
+            android:text="View Sub-Wallets"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/calculations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerheader"
+        android:layout_margin="1dp"
+        android:paddingRight="10sp"
+        android:background="@drawable/card_look_1"
+        android:orientation="horizontal"/>
+
+
+
+    <View
+        android:background="@color/colorAccent"
+        android:id="@+id/viewBorder0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+
+
+    <RelativeLayout
+        android:id="@+id/containerinput"
+        android:layout_below="@+id/calculations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+
+        <LinearLayout
+            android:id="@+id/lviewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="100.00dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#797979"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@android:drawable/spinner_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!-- col 1 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtGame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="GAME" />
+                </LinearLayout>
+                <!-- col 1 end -->
+                <!-- col 2 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Unlock Status"
+                        android:textColor="#0B0000" />
+                </LinearLayout>
+                <!-- col 2 end -->
+                <!-- col 3 -->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtCoins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Total Coins" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_events"
+                style="@style/relative_CardLook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_below="@+id/lviewBorder"
+            android:background="@color/colorAccent"
+            android:id="@+id/viewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/payText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerinput"
+        android:background="@drawable/border"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payText"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnclose"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/close"
+                android:text="Button" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

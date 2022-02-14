@@ -1,0 +1,51 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.swarmconnect" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml
+8
+9    <!-- <uses-sdk android:minSdkVersion="3" /> -->
+10    <uses-permission android:name="android.permission.INTERNET" />
+10-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:5:2-64
+10-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:5:19-61
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:6:2-76
+11-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:6:19-73
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:7:5-81
+12-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:7:22-78
+13    <!-- Required if using the Swarm Store features. Not required otherwise. -->
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:9:2-72
+14-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:9:19-69
+15
+16    <application>
+16-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:11:5-20:19
+17        <activity
+17-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:12:9-17:37
+18            android:name="com.swarmconnect.SwarmMainActivity"
+18-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:12:19-68
+19            android:configChanges="orientation|keyboardHidden"
+19-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:14:10-60
+20            android:label="Swarm"
+20-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:17:13-34
+21            android:screenOrientation="portrait"
+21-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:16:10-46
+22            android:theme="@style/HoloTheme"
+22-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:13:10-42
+23            android:windowSoftInputMode="stateHidden" />
+23-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:15:10-51
+24
+25        <service
+25-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:19:9-97
+26            android:name="com.swarmconnect.NotificationService"
+26-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:19:18-69
+27            android:process=":swarm" />
+27-->D:\Developers\Android\Fourtune\swarmConnect\src\main\AndroidManifest.xml:19:70-94
+28    </application>
+29
+30</manifest>

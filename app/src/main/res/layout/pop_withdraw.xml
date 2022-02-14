@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/containerheader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu_bar_home"
+        android:textColor="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/specialeliteregular"
+            android:gravity="left"
+            android:padding="8sp"
+            android:text="Enter amount to withdraw"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/calculations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerheader"
+        android:layout_margin="1dp"
+        android:paddingRight="0sp"
+        android:background="@drawable/card_look_1"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:padding="0sp"
+                    android:text="Earnings total"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTotalAccountAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:gravity="center"
+                    android:padding="0sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:padding="0sp"
+                    android:text=" "
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:padding="0sp"
+                    android:text="Receiving totals "
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTotalAccountAmountReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:gravity="center"
+                    android:padding="0sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/specialeliteregular"
+                    android:padding="0sp"
+                    android:text=" "
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/radiobuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculations"
+        android:layout_weight="1"
+        android:background="@drawable/swarm_footer_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioearnings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/white"
+                android:checked="false"
+                android:text="Withdraw from earnings"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioreceivings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/white"
+                android:text="Withdraw from receivings"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_below="@+id/radiobuttons"
+        android:background="@color/colorAccent"
+        android:id="@+id/viewBorder0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/containerinput"
+        android:layout_below="@+id/viewBorder0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <EditText
+            android:id="@+id/edtWithdrawableAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/spinner_background"
+            android:fontFamily="@font/cabinsketchregular"
+            android:gravity="center"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:padding="5sp"
+            android:textSize="33sp" />
+
+        <View
+            android:layout_below="@+id/edtWithdrawableAmount"
+            android:background="@color/colorAccent"
+            android:id="@+id/viewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerinput"
+        android:layout_margin="1dp"
+        android:paddingRight="10sp"
+        android:background="@drawable/card_look_1"
+        android:orientation="horizontal">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeTo"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/paylabels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/specialeliteregular"
+            android:padding="10sp"
+            android:text="Click below to withdraw"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payText"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnmpesa"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:scaleType="centerInside"
+                android:src="@drawable/mpesaimg"
+                android:text="Button" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/btnvisa"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:scaleType="fitCenter"
+                android:src="@drawable/visapay"
+                android:text="Button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <RelativeLayout
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payText"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnmpesa"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:scaleType="centerInside"
+                android:src="@drawable/mpesaimg"
+                android:text="Button" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </RelativeLayout>-->
+
+</RelativeLayout>

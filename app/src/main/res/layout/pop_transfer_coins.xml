@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/containerheader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu_bar_home"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/specialeliteregular"
+            android:gravity="left"
+            android:padding="8sp"
+            android:text="Token transfer, enter qty"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!--    <EditText
+            android:id="@+id/edtAdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:fontFamily="@font/quicksand_regular"
+            android:gravity="top"
+            android:hint="Type date to be absent"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp" />-->
+
+    <View
+        android:background="@color/colorAccent"
+        android:id="@+id/viewBorder0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:id="@+id/containerinput"
+        android:layout_below="@+id/containerheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <LinearLayout
+            android:id="@+id/edtTokenContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/specialeliteregular"
+                android:text="Token:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtTokenAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/spinner_background"
+                android:fontFamily="@font/cabinsketchregular"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="number"
+                android:padding="5sp"
+                android:textSize="33sp" />
+        </LinearLayout>
+
+    <!--    <EditText
+            android:id="@+id/edtTopic"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/cabinsketchregular"
+            android:gravity="center"
+            android:hint="1"
+            android:padding="5sp"
+            android:textSize="33sp"
+            android:inputType="number"
+            />-->
+
+        <View
+            android:layout_below="@+id/edtTokenContainer"
+            android:background="@color/colorAccent"
+            android:id="@+id/viewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerinput"
+        android:layout_margin="1dp"
+        android:background="@drawable/card_look_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/specialeliteregular"
+                android:text="Enter phone no. to transfer token to :"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@android:drawable/spinner_background"
+                android:fontFamily="@font/cabinsketchregular"
+                android:gravity="center"
+                android:hint="+254"
+                android:inputType="text"
+                android:padding="5sp"
+                android:textSize="33sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeTo"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/specialeliteregular"
+            android:padding="10sp"
+            android:text="Execute token transfer"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

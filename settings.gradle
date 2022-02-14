@@ -1,0 +1,5 @@
+include ':swarmConnect'
+include ':animationlib'
+include ':library'
+include ':app'
+rootProject.name = "Fourtune"

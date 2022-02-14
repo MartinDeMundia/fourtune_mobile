@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Olli B.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">SolitaireCG</string>
+    <string name="menu_bakersgame">Baker\'s Game</string>
+    <string name="menu_fortythieves">Forty Thieves</string>
+    <string name="menu_freecell">Freecell</string>
+    <string name="menu_golf">Golf</string>
+    <string name="menu_golf_wrapcards">Golf (wrap cards)</string>
+    <string name="menu_klondike_dealone">Klondike (1 Karte)</string>
+    <string name="menu_klondike_dealthree">Klondike (3 Karten)</string>
+    <string name="menu_spider">Spider (4 Farben)</string>
+    <string name="menu_blackwidow">Black Widow (Spider 1 Fb)</string>
+    <string name="menu_tarantula">Tarantula (Spider 2 Farben)</string>
+    <string name="menu_tripeaks">TriPeaks</string>
+    <string name="menu_tripeaks_wrapcards">TriPeaks (wrap cards)</string>
+    <string name="menu_vegas_dealone">Vegas (1 Karte)</string>
+    <string name="menu_vegas_dealthree">Vegas (3 Karten)</string>
+    <string name="menu_selectgame">Spieltyp wählen</string>
+    <string name="menu_new">Neues Spiel</string>
+    <string name="menu_restart">Von vorne beg.</string>
+    <string name="menu_options">Optionen</string>
+    <string name="menu_stats">Stats</string>
+    <string name="menu_help">Hilfe</string>
+    <string name="menu_exit">Beenden</string>
+    <string name="menu_blank"></string>
+    <string name="solitaire_layout_text_text"></string>
+
+    <!-- Shown on the options preference screen -->
+    <string name="options_title">Optionen</string>
+    <string name="big_cards">Große Kartenfarben</string>
+    <string name="big_cards_desc">Zeigt einfachere und größere Farben für bessere Erkennbarkeit</string>
+    <string name="display_time">Zeit anzeigen</string>
+    <string name="display_time_desc">Zeigt die verstrichene Zeit des aktuellen Spiels</string>
+    <string name="auto_move">Auto-bewegen</string>
+    <string name="auto_move_desc">Mögliche Karten automatisch auf die Stapel bewegen</string>
+    <string name="always">Immer</string>
+    <string name="fling_only">Nur \'fling\'</string>
+
+    <string name="lock_landscape">Breitformat-Sperre</string>
+    <string name="lock_landscape_desc">Auf Breitformat-Orientierung fest einstellen</string>
+
+    <!-- Shown in the game if needed -->
+    <string name="toast_blank_menu">Menüpunkt absichtlich leer.</string>
+    <string name="toast_restart_invalid">Game over. Neustart nicht möglich.</string>
+    <string name="toast_use_start_menu">Game over. Menü-Taste für neues Spiel.</string>
+    <string name="toast_no_undo_left">Kein weiteres Rückgängig mehr verfügbar.</string>
+
+    <!-- Shown on the splash screen at first startup -->
+    <string name="splash_text">
+\n\n\n\n\n\n\n\n
+TIPP: Lange auf die ^ Taste unten am Spielfeld drücken, um ein alternatives Menü aufzurufen.
+    </string>
+
+    <!-- Shown when a game is won -->
+    <string name="win_text">Gewonnen!\n\nMenü drücken, um ein neues Spiel zu starten.</string>
+
+    <!-- Messages shown on the help window -->
+
+    <!-- The argument is the version number of the SolitaireCG application -->
+    <string name="help_window_title">SolitaireCG %s Hilfe</string>
+    <string name="readme_header">LIESMICH Datei aus dem Quellcode</string>
+    <string name="copying_header">COPYING Datei aus dem Quellcode</string>
+
+    <!-- Messages shown on the stats window -->
+
+    <string name="accept">Ok</string>
+    <string name="clear">Statistiken zurücksetzen</string>
+
+    <!-- The argument is the pretty game name, such as "Klondike (Dealing Three)" or "Golf" -->
+    <string name="stats_for_game">%s Statistiken</string>
+
+    <string name="stats_wins_and_attempts">Gewonnen: %1$d Versuche: %2$d</string>
+    <string name="stats_winning_percentage">Prozent gewonnen: %s%%</string>
+    <string name="stats_fastest_time">Schnellste Zeit: %s</string>
+
+    <!-- The argument is the user's high score as an integer -->
+    <string name="stats_high_score">High Score: %s</string>
+
+
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+
+    <string name="help">Hilfe</string>
+    <string name="preferences">Einstellungen</string>
+    <string name="online">Spielen Sie online</string>
+
+    <string name="back">Zurück</string>
+    <string name="cancel">Abbrechen</string>
+
+    <string name="newnew">Neu</string>
+    <string name="delete">Löschen</string>
+    <string name="undo">Rückgängig</string>
+
+    <!-- app -->
+
+    <string name="flip">Stein spiegeln</string>
+    <string name="i_pass">Aussetzen</string>
+
+
+    <string name="quit">Spiel verlassen?</string>
+    <string name="social">Social</string>
+
+
+    <string name="new_game">Neues Spiel</string>
+    <string name="red_ko">Rot hat keine Züge mehr</string>
+    <string name="congratulations">Herzlichen Glückwunsch, du hast gewonnen. Punkte: </string>
+    <string name="try_next">Versuche das nächste Level.</string>
+    <string name="wins_with_score">gewinnt mit Punkten</string>
+
+    <string name="Red">Spieler Rot</string>
+    <string name="Green">Spieler Grün</string>
+    <string name="Blue">Spieler Blau</string>
+    <string name="Orange">Spieler Orange</string>
+
+
+    <!-- rate form -->
+    <string name="if_you_enjoy">Wenn dir Blokish gefällt, magst du es bewerten?</string>
+    <string name="now">Ja</string>
+    <string name="later">Später</string>
+    <string name="never">Nein</string>
+
+
+    <!-- preferences -->
+    <string name="displaySeeds_title">Anlegepunkte zeigen</string>
+    <string name="displaySeeds_description">Felder markieren, an denen Anlegen möglich ist.</string>
+
+    <string name="ai_title">Computergegner</string>
+    <string name="ai_description">Computer übernimmt Grün, Blau und Gelb</string>
+
+    <string name="aiLevel_title">Spielstärke</string>
+    <string name="aiLevel_dialog">Spielstärke auswählen</string>
+
+
+    <!-- help -->
+    <string name="video_description_1">Drücke auf das Bild um ein Demo-Video auf YouTube abzuspielen</string>
+    <string name="video_description_2">Du kannst das Video vergrößern, indem du das Handy quer hältst</string>
+
+    <string name="rules_title">Regeln des Spiels Blokus Classic</string>
+    <string name="rules_text_1">
+		- Ein Spielbrett mit 20 * 20 Kästchen.
+		\n- 4 Spieler, die jeweils 21 Teile haben : 1 einzelnes Viereck, 1 Domino, 2 Triominos, 5 Tetraminos und 12 Pentaminos
+		\n- Jeder Spieler muss so viele Teile wie möglich auf das Spielbrett legen.
+		\n- Das erste Teil muss so gelegt werden, dass es eine der Ecken des Spielbretts berührt.
+		\n- Die darauf folgenden Teile müssen so gelegt werden, dass sie eine Ecke der eigenen Teile berühren. Sie dürfen mehrere Ecken auf einmal, aber keine Kante eines Teils berühren!
+	</string>
+    <string name="rules_text_2">
+		- Wenn man kein Teil mehr legen kann, muss man seinen Zug überspringen.
+		\n- Das Spiel endet, wenn kein Spieler mehr Teile legen kann.
+		\n- Die Punktzahl eines Spielers ist gleich der Anzahl von Vierecken der eigenen Teile, die auf dem Spielbrett liegen.
+	</string>
+
+    <string name="howToPlay_title">Kurzanleitung für die Blokish Android App</string>
+    <string name="howToPlay_text_1">
+		Benutze Drag&amp;Drop und Wisch-Gesten, um Teile zu platzieren:
+		\n- Navigiere durch deine verbleibenden Teile mit Wischen.
+	</string>
+    <string name="howToPlay_text_2">- Wähle und ziehe ein Teil auf das Spielbrett. Jetzt kannst du es umherziehen, indem du den großen grauen Kreis berührst.</string>
+    <string name="howToPlay_text_3">- Drehe das Teil, indem du einen der Griffe benutzt.</string>
+    <string name="howToPlay_text_4">
+		- Du kannst ein Teil spiegeln, indem du es lange berührst.
+		\nDu kannst auch über das Menü ein Teil spiegeln, das ist besonders bei Tablets nützlich.
+		\n- Mit dem roten Knopf kannst du einen Zug abbrechen. Er setzt das Teil zurück in deinen Bestand.
+		\n- Wenn der Zug gültig ist, erscheint ein grüner \'ok\' Knopf. Du kannst den Zug ausführen, indem du darauf drückst!
+	</string>
+    <string name="howToPlay_text_5">
+		- Du kannst jederzeit die verbleibenden Teile deiner Gegner sehen : wähle einfach unten den Reiter der entsprechenden Farbe aus.
+		\n- Wenn du gegen den Computer gewinnst, kannst du eine höhere Spielstärke auswählen : Menü &gt; Einstellungen.
+	</string>
+
+</resources>

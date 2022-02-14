@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_login_4"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:id="@+id/lConstrLayouRecycler1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:padding="0dp"
+                android:src="@drawable/fourtune"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <LinearLayout
+                android:id="@+id/linearlaymyAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="10"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/lbl_account"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="false"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/ic_person_white_24dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/lbl_myaccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:background="@drawable/menu_bar_home"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="My Account"
+                        android:textColor="@color/design_default_color_background"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/linearlaymysubscription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:id="@+id/lbl_settings"
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="false"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/lbl_cog"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/lbl_mysettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="App Settings"
+                        android:textColor="@android:color/white"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearlaypurchasetoken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:id="@+id/img_managesubscriptions"
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/one_coin"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/lbl_managesubscriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:background="@drawable/menu_bar_home"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Purchase Tokens"
+                        android:textColor="@color/design_default_color_background"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lineartransfertoken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/coin"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/lbl_billinghistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:background="@drawable/menu_bar_home"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Transfer Tokens"
+                        android:textColor="@color/design_default_color_background"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearwithdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/coins"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/lbl_withdraw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:background="@drawable/menu_bar_home"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Withdraw Cash"
+                        android:textColor="@color/design_default_color_background"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearlaylogout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/line_divider"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearlaylogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:id="@+id/img_logout"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/ic_lock_white_24dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lbl_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:background="@drawable/button"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Sign Out"
+                        android:textColor="@color/design_default_color_background"
+                        android:textColorLink="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
